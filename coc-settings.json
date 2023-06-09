@@ -1,0 +1,75 @@
+{
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "suggest.noselect": true,
+  "suggest.enablePreselect": true,
+  "suggest.timeout": 500,
+  "suggest.selection": "recentlyUsed",
+  "suggest.virtualText": true,
+  "vimlsp.suggest.fromRuntimepath": true,
+  "vimlsp.suggest.fromVimruntime": true,
+  "suggest.insertMode": "insert",
+  "suggest.formatItems": [
+          "abbr",
+          "menu",
+          "kind"
+  ],
+  "suggest.completionItemKindLabels": {
+    "constructor": "\ufb25",
+    "keyword": "\uf1de",
+    "variable": "\uea88",
+    "value": "\uf89f",
+    "operator": "\u03a8",
+    "function": "\u0192",
+    "reference": "\ueb36",
+    "constant": "\uf8fe",
+    "method": "\uf09a",
+    "struct": "\ufb44",
+    "class": "\uf0e8",
+    "interface": "\uf417",
+    "text": "\ue612",
+    "enum": "\uf435",
+    "enumMember": "\uf02b",
+    "module": "\uf40d",
+    "color": "\ueb5c",
+    "property": "\ue624",
+    "field": "\uf04bf",
+    "unit": "\uf475",
+    "event": "\uea86",
+    "file": "\uea7b",
+    "folder": "\uf114",
+    "snippet": "\ue60b",
+    "typeParameter": "\uea92",
+    "default": " "
+	}, 
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]    
+    },
+     "lua": {
+      "command": "/home/nestos/.local/share/lua-language-server/bin/lua-language-server",
+      "args": [
+        "-E",
+        "/home/nestos/.local/share/lua-language-server/bin/main.lua"
+      ],
+      "filetypes": ["lua"],
+      "settings": {
+        "Lua": {
+          "workspace.library": {
+            "/usr/share/nvim/runtime/lua": true,
+            "/usr/share/nvim/runtime/lua/vim": true,
+            "/usr/share/nvim/runtime/lua/vim/lsp": true
+          },
+          "diagnostics": {
+            "globals": [ "vim" ]
+            
+              }
+           }
+        }
+     }
+  },
+  "snippets.ultisnips.pythonPrompt": false,
+  "sumneko-lua.enableNvimLuaDev": true
+}
